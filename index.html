@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InternTrail — Follow the trail to your first internship</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>InternTrail</h1>
+      <p>Follow the trail to your first internship</p>
+    </header>
+
+    <nav id="filter-bar" aria-label="Filter internships by type">
+      <button class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">All Internships</button>
+      <button class="filter-btn" data-filter="Remote" aria-pressed="false">Remote Only</button>
+      <button class="filter-btn" data-filter="Onsite" aria-pressed="false">Onsite Only</button>
+    </nav>
+
+    <main>
+      <div id="card-grid">
+        <!-- Cards injected by script.js -->
+      </div>
+
+      <dialog id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <!-- Modal content injected by script.js -->
+      </dialog>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 InternTrail. Helping freshers find their first opportunity.</p>
+    </footer>
+
+  </body>
+</html>
